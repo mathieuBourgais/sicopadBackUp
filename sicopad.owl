@@ -1,0 +1,557 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#"
+     xml:base="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad">
+        <owl:imports rdf:resource="http://www.w3.org/2006/time#2016"/>
+        <owl:imports rdf:resource="http://www.w3.org/ns/sosa/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#basedOnHealthData -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#basedOnHealthData">
+        <rdfs:comment>Relation between a qualitativeData and its related HealthData</rdfs:comment>
+        <rdfs:label>basedOnHealthData</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#basedOnResult -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#basedOnResult">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#HealthData"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/sosa/Result"/>
+        <rdfs:comment>Relation between a HealthData and a result of a sensor</rdfs:comment>
+        <rdfs:label>basedOnResult</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#hasActivity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#hasActivity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#Activity"/>
+        <rdfs:comment>The activity performed by the patient</rdfs:comment>
+        <rdfs:label>hasActivity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#hasConstraint -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#hasConstraint">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#Situation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#Constraint"/>
+        <rdfs:comment>link between a situation and a constraint</rdfs:comment>
+        <rdfs:label>hasConstraint</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#hasCurrentState -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#hasCurrentState">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#CurrentState"/>
+        <rdfs:comment>the current medical state of a patient</rdfs:comment>
+        <rdfs:label>hasCurrentState</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#hasEndingTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#hasEndingTime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#Activity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <rdfs:comment>ending time of a particular activity</rdfs:comment>
+        <rdfs:label>hasEndingTime</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#hasExucuteTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#hasExucuteTime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#MedicalAct"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <rdfs:comment>The instant in time where the medical act was performed</rdfs:comment>
+        <rdfs:label>hasExecuteTime</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#hasHealthData -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#hasHealthData">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#MedicalInformation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#HealthData"/>
+        <rdfs:comment>Relation between a MedicalInformation and a HealthData.</rdfs:comment>
+        <rdfs:label>hasHealthData</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#hasMedicalHistory -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#hasMedicalHistory">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#MedicalHistory"/>
+        <rdfs:comment>the medical history of a patient, composed of previous current states</rdfs:comment>
+        <rdfs:label>hasMedicalHistory</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#hasStartingTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#hasStartingTime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#Activity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <rdfs:comment>the starting time of a particular activity</rdfs:comment>
+        <rdfs:label>hasStartingTime</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#performsActivity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#performsActivity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#Activity"/>
+        <rdfs:comment>Relation  between a Patient and an Activity performed.</rdfs:comment>
+        <rdfs:label>performsActivity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#qualitativeResult -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#qualitativeResult">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#QualitativeData"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#qualitativeValue"/>
+        <rdfs:label>qualitativeResult</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#qualitativeTendency -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#qualitativeTendency">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#QualitativeData"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#qualitativeValue"/>
+        <rdfs:label>qualitativeTendency</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#significativity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#significativity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#QualitativeData"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#qualitativeValue"/>
+        <rdfs:label>significativity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#age">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#Patient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+        <rdfs:comment>the age, in a number of year, of the patient</rdfs:comment>
+        <rdfs:label>age</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#disease -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#disease">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#Patient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>the disease affecting the patient</rdfs:comment>
+        <rdfs:label>disease</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#longTendency -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#longTendency">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#HealthData"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+        <rdfs:comment>tendency of the result computed on a set of previous results.</rdfs:comment>
+        <rdfs:label>longTendency</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#probability -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#probability">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#Activity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#sensorConfidence -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#sensorConfidence">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#QualitativeData"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+        <rdfs:comment>the confidence between 0 and 1 about the sensor witch made the observation.</rdfs:comment>
+        <rdfs:label>sensorConfidence</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#tendency -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#tendency">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#HealthData"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+        <rdfs:comment>the difference between the current result and the previous one.</rdfs:comment>
+        <rdfs:label>tendency</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#Activity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#Activity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#HealthContext"/>
+        <rdfs:comment>An activity performed someone.</rdfs:comment>
+        <rdfs:label>Activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#Constraint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#Constraint">
+        <rdfs:comment>a constraint on data used to define situations.</rdfs:comment>
+        <rdfs:label>Constraint</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#CurrentState -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#CurrentState">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#MedicalInformation"/>
+        <rdfs:comment>Representsthe current medical state of a patient, i.e. the last data sensored.</rdfs:comment>
+        <rdfs:label>CurrentState</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#DeducedActivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#DeducedActivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#Activity"/>
+        <rdfs:comment>An activity which happened but was not initialy planed.</rdfs:comment>
+        <rdfs:label>DeducedActivity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#Device -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#Device">
+        <owl:equivalentClass rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#HealthContext"/>
+        <rdfs:comment>R^present a collection of sensors. Is equivalent to sosa:Platform.</rdfs:comment>
+        <rdfs:label>Device</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#Environment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#Environment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#HealthContext"/>
+        <rdfs:comment>Represent the spaial and temporal data around someone performing activities.</rdfs:comment>
+        <rdfs:label>Environment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#HealthContext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#HealthContext">
+        <rdfs:comment>An entity used to define the context of a health mesure performed by a sensor on a patient realising an activity in a given environment</rdfs:comment>
+        <rdfs:label>HealthContext</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#HealthData -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#HealthData">
+        <rdfs:comment>Aggregates the result of a sensor with a mathematical analysis of its long tem and short term tendencies.</rdfs:comment>
+        <rdfs:label>HealthData</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#MedicalAct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#MedicalAct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#HealthContext"/>
+        <rdfs:comment>may be used in the creation of a situation</rdfs:comment>
+        <rdfs:comment>represent an act realized by the medical staff on the patient</rdfs:comment>
+        <rdfs:label>MedicalAct</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#MedicalHistory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#MedicalHistory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#MedicalInformation"/>
+        <rdfs:comment>Represents a collection of the previous medical states of a patient.</rdfs:comment>
+        <rdfs:label>MedicalHistory</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#MedicalInformation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#MedicalInformation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#HealthContext"/>
+        <rdfs:comment>Represents a medical information about a patient.</rdfs:comment>
+        <rdfs:label>MedicalInformation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#Patient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#Patient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#HealthContext"/>
+        <rdfs:comment>Someone with a disease under monitoring.</rdfs:comment>
+        <rdfs:label>Patient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#QualitativeData -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#QualitativeData">
+        <rdfs:comment>Traanslation of a HealthDatat with qualitative terms and computation of a significativity value.</rdfs:comment>
+        <rdfs:label>QualitativeData</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#ScheduledActivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#ScheduledActivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#Activity"/>
+        <rdfs:comment>An activity previously scheduled.</rdfs:comment>
+        <rdfs:label>ScheduledActivity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#Situation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#Situation">
+        <rdfs:comment>Qualitative representation of the health situation of someone.</rdfs:comment>
+        <rdfs:label>Situation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#qualitativeValue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#qualitativeValue"/>
+    
+
+
+    <!-- http://www.w3.org/2006/time#TemporalEntity -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#TemporalEntity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#Environment"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/Platform -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/sosa/Platform"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#big_decrease -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#big_decrease">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#qualitativeValue"/>
+        <rdfs:label>big decrease</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#big_increase -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#big_increase">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#qualitativeValue"/>
+        <rdfs:label>big increase</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#decrease -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#decrease">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#qualitativeValue"/>
+        <rdfs:label>decrease</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#high -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#high">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#qualitativeValue"/>
+        <rdfs:label>high</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#increase -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#increase">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#qualitativeValue"/>
+        <rdfs:label>increase</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#low -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#low">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#qualitativeValue"/>
+        <rdfs:label>low</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#neutral -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#neutral">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#qualitativeValue"/>
+        <rdfs:label>neutral</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#normal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#normal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#qualitativeValue"/>
+        <rdfs:label>normal</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#small_decrease -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#small_decrease">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#qualitativeValue"/>
+        <rdfs:label>small decrease</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#small_increase -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#small_increase">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#qualitativeValue"/>
+        <rdfs:label>small increase</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#very_high -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#very_high">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#qualitativeValue"/>
+        <rdfs:label>very high</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#very_low -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#very_low">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad#qualitativeValue"/>
+        <rdfs:label>very low</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,125 @@
+ERROR 0 [2021-02-08 14:54:21,213] [main] org.apache.jena.riot  - [line: 1, col: 1 ] Content is not allowed in prolog.
+ERROR 0 [2021-02-09 13:47:18,952] [main] org.apache.jena.riot  - [line: 1, col: 1 ] Content is not allowed in prolog.
+ERROR 82 [2021-02-09 13:47:19,034] [main] org.apache.jena.riot  - [line: 1929, col: 90] Broken IRI: http://semanticweb.org/STEaMINg/ContextOn
+ERROR 86 [2021-02-09 13:47:19,038] [main] org.apache.jena.riot  - [line: 1, col: 1 ] Expected BNode or IRI: Got: [DIRECTIVE:prefix]
+ERROR 90 [2021-02-09 13:47:19,042] [main] csparql.ind.App  - Unknown char: @(64)
+org.apache.jena.atlas.json.JsonParseException: Unknown char: @(64)
+	at org.apache.jena.atlas.json.io.parser.TokenizerJSON.exception(TokenizerJSON.java:789)
+	at org.apache.jena.atlas.json.io.parser.TokenizerJSON.exception(TokenizerJSON.java:779)
+	at org.apache.jena.atlas.json.io.parser.TokenizerJSON.readKeyWord(TokenizerJSON.java:229)
+	at org.apache.jena.atlas.json.io.parser.TokenizerJSON.parseToken(TokenizerJSON.java:187)
+	at org.apache.jena.atlas.json.io.parser.TokenizerJSON.hasNext(TokenizerJSON.java:59)
+	at org.apache.jena.atlas.iterator.PeekIterator.fill(PeekIterator.java:50)
+	at org.apache.jena.atlas.iterator.PeekIterator.<init>(PeekIterator.java:44)
+	at org.apache.jena.riot.lang.LangEngine.<init>(LangEngine.java:45)
+	at org.apache.jena.riot.lang.LangBase.<init>(LangBase.java:32)
+	at org.apache.jena.riot.lang.LangRDFJSON.<init>(LangRDFJSON.java:42)
+	at org.apache.jena.riot.RiotReader.createParserRdfJson(RiotReader.java:348)
+	at org.apache.jena.riot.RiotReader.createParser(RiotReader.java:163)
+	at org.apache.jena.riot.RiotReader.createParser(RiotReader.java:134)
+	at org.apache.jena.riot.RDFParserRegistry$ReaderRIOTFactoryImpl$1.read(RDFParserRegistry.java:141)
+	at org.apache.jena.riot.RDFDataMgr.process(RDFDataMgr.java:859)
+	at org.apache.jena.riot.RDFDataMgr.read(RDFDataMgr.java:255)
+	at org.apache.jena.riot.RDFDataMgr.read(RDFDataMgr.java:241)
+	at org.apache.jena.riot.adapters.RDFReaderRIOT.read(RDFReaderRIOT.java:70)
+	at com.hp.hpl.jena.rdf.model.impl.ModelCom.read(ModelCom.java:286)
+	at eu.larkc.csparql.common.utils.CsparqlUtils.serializeRDFFile(CsparqlUtils.java:26)
+	at csparql.ind.App.main(App.java:40)
+ERROR 1905 [2021-02-15 11:43:07,155] [main] csparql.ind.App  - Non-group key variable in SELECT: ?s
+com.hp.hpl.jena.query.QueryParseException: Non-group key variable in SELECT: ?s
+	at com.hp.hpl.jena.sparql.lang.SyntaxVarScope.checkExprVarUse(SyntaxVarScope.java:165)
+	at com.hp.hpl.jena.sparql.lang.SyntaxVarScope.check(SyntaxVarScope.java:119)
+	at com.hp.hpl.jena.sparql.lang.SyntaxVarScope.check(SyntaxVarScope.java:70)
+	at com.hp.hpl.jena.sparql.lang.SPARQLParser.validateParsedQuery(SPARQLParser.java:56)
+	at com.hp.hpl.jena.sparql.lang.ParserSPARQL11.parse$(ParserSPARQL11.java:54)
+	at com.hp.hpl.jena.sparql.lang.SPARQLParser.parse(SPARQLParser.java:37)
+	at com.hp.hpl.jena.query.QueryFactory.parse(QueryFactory.java:139)
+	at com.hp.hpl.jena.query.QueryFactory.create(QueryFactory.java:79)
+	at com.hp.hpl.jena.query.QueryFactory.create(QueryFactory.java:52)
+	at eu.larkc.csparql.sparql.jena.JenaEngine.parseSparqlQuery(JenaEngine.java:541)
+	at eu.larkc.csparql.core.engine.CsparqlEngineImpl.registerQuery(CsparqlEngineImpl.java:309)
+	at csparql.ind.App.main(App.java:105)
+ERROR 0 [2021-02-15 11:51:56,757] [main] org.apache.jena.riot  - [line: 6290, col: 84] XML document structures must start and end within the same entity.
+ERROR 16 [2021-02-15 11:51:56,773] [main] org.apache.jena.riot  - [line: 3, col: 1 ] Broken IRI (newline): rdf:RDF xmlns="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#"
+ERROR 22 [2021-02-15 11:51:56,779] [main] org.apache.jena.riot  - [line: 3, col: 1 ] Broken IRI (newline): rdf:RDF xmlns="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#"
+ERROR 27 [2021-02-15 11:51:56,784] [main] org.apache.jena.riot  - [line: 1, col: 1 ] Expected a { character to start a JSON Object but got [LT]
+ERROR 29 [2021-02-15 11:51:56,786] [main] csparql.ind.App  - [line: 1, col: 1 ] Expected a { character to start a JSON Object but got [LT]
+org.apache.jena.riot.RiotException: [line: 1, col: 1 ] Expected a { character to start a JSON Object but got [LT]
+	at org.apache.jena.riot.system.ErrorHandlerFactory$ErrorHandlerStd.fatal(ErrorHandlerFactory.java:136)
+	at org.apache.jena.riot.lang.LangEngine.raiseException(LangEngine.java:163)
+	at org.apache.jena.riot.lang.LangEngine.exceptionDirect(LangEngine.java:156)
+	at org.apache.jena.riot.lang.LangEngine.exception(LangEngine.java:149)
+	at org.apache.jena.riot.lang.LangRDFJSON.tryParseGraph(LangRDFJSON.java:85)
+	at org.apache.jena.riot.lang.LangRDFJSON.runParser(LangRDFJSON.java:55)
+	at org.apache.jena.riot.lang.LangBase.parse(LangBase.java:42)
+	at org.apache.jena.riot.RDFParserRegistry$ReaderRIOTFactoryImpl$1.read(RDFParserRegistry.java:142)
+	at org.apache.jena.riot.RDFDataMgr.process(RDFDataMgr.java:859)
+	at org.apache.jena.riot.RDFDataMgr.read(RDFDataMgr.java:255)
+	at org.apache.jena.riot.RDFDataMgr.read(RDFDataMgr.java:241)
+	at org.apache.jena.riot.adapters.RDFReaderRIOT.read(RDFReaderRIOT.java:70)
+	at com.hp.hpl.jena.rdf.model.impl.ModelCom.read(ModelCom.java:286)
+	at eu.larkc.csparql.common.utils.CsparqlUtils.serializeRDFFile(CsparqlUtils.java:26)
+	at csparql.ind.App.main(App.java:40)
+ERROR 0 [2021-02-15 11:52:12,099] [main] org.apache.jena.riot  - [line: 6290, col: 84] XML document structures must start and end within the same entity.
+ERROR 22 [2021-02-15 11:52:12,121] [main] org.apache.jena.riot  - [line: 3, col: 1 ] Broken IRI (newline): rdf:RDF xmlns="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#"
+ERROR 25 [2021-02-15 11:52:12,124] [main] org.apache.jena.riot  - [line: 3, col: 1 ] Broken IRI (newline): rdf:RDF xmlns="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#"
+ERROR 36 [2021-02-15 11:52:12,135] [main] org.apache.jena.riot  - [line: 1, col: 1 ] Expected a { character to start a JSON Object but got [LT]
+ERROR 38 [2021-02-15 11:52:12,137] [main] csparql.ind.App  - [line: 1, col: 1 ] Expected a { character to start a JSON Object but got [LT]
+org.apache.jena.riot.RiotException: [line: 1, col: 1 ] Expected a { character to start a JSON Object but got [LT]
+	at org.apache.jena.riot.system.ErrorHandlerFactory$ErrorHandlerStd.fatal(ErrorHandlerFactory.java:136)
+	at org.apache.jena.riot.lang.LangEngine.raiseException(LangEngine.java:163)
+	at org.apache.jena.riot.lang.LangEngine.exceptionDirect(LangEngine.java:156)
+	at org.apache.jena.riot.lang.LangEngine.exception(LangEngine.java:149)
+	at org.apache.jena.riot.lang.LangRDFJSON.tryParseGraph(LangRDFJSON.java:85)
+	at org.apache.jena.riot.lang.LangRDFJSON.runParser(LangRDFJSON.java:55)
+	at org.apache.jena.riot.lang.LangBase.parse(LangBase.java:42)
+	at org.apache.jena.riot.RDFParserRegistry$ReaderRIOTFactoryImpl$1.read(RDFParserRegistry.java:142)
+	at org.apache.jena.riot.RDFDataMgr.process(RDFDataMgr.java:859)
+	at org.apache.jena.riot.RDFDataMgr.read(RDFDataMgr.java:255)
+	at org.apache.jena.riot.RDFDataMgr.read(RDFDataMgr.java:241)
+	at org.apache.jena.riot.adapters.RDFReaderRIOT.read(RDFReaderRIOT.java:70)
+	at com.hp.hpl.jena.rdf.model.impl.ModelCom.read(ModelCom.java:286)
+	at eu.larkc.csparql.common.utils.CsparqlUtils.serializeRDFFile(CsparqlUtils.java:26)
+	at csparql.ind.App.main(App.java:40)
+ERROR 0 [2021-02-15 11:52:57,812] [main] org.apache.jena.riot  - [line: 6290, col: 84] XML document structures must start and end within the same entity.
+ERROR 17 [2021-02-15 11:52:57,829] [main] org.apache.jena.riot  - [line: 3, col: 1 ] Broken IRI (newline): rdf:RDF xmlns="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#"
+ERROR 21 [2021-02-15 11:52:57,833] [main] org.apache.jena.riot  - [line: 3, col: 1 ] Broken IRI (newline): rdf:RDF xmlns="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#"
+ERROR 26 [2021-02-15 11:52:57,838] [main] org.apache.jena.riot  - [line: 1, col: 1 ] Expected a { character to start a JSON Object but got [LT]
+ERROR 28 [2021-02-15 11:52:57,840] [main] csparql.ind.App  - [line: 1, col: 1 ] Expected a { character to start a JSON Object but got [LT]
+org.apache.jena.riot.RiotException: [line: 1, col: 1 ] Expected a { character to start a JSON Object but got [LT]
+	at org.apache.jena.riot.system.ErrorHandlerFactory$ErrorHandlerStd.fatal(ErrorHandlerFactory.java:136)
+	at org.apache.jena.riot.lang.LangEngine.raiseException(LangEngine.java:163)
+	at org.apache.jena.riot.lang.LangEngine.exceptionDirect(LangEngine.java:156)
+	at org.apache.jena.riot.lang.LangEngine.exception(LangEngine.java:149)
+	at org.apache.jena.riot.lang.LangRDFJSON.tryParseGraph(LangRDFJSON.java:85)
+	at org.apache.jena.riot.lang.LangRDFJSON.runParser(LangRDFJSON.java:55)
+	at org.apache.jena.riot.lang.LangBase.parse(LangBase.java:42)
+	at org.apache.jena.riot.RDFParserRegistry$ReaderRIOTFactoryImpl$1.read(RDFParserRegistry.java:142)
+	at org.apache.jena.riot.RDFDataMgr.process(RDFDataMgr.java:859)
+	at org.apache.jena.riot.RDFDataMgr.read(RDFDataMgr.java:255)
+	at org.apache.jena.riot.RDFDataMgr.read(RDFDataMgr.java:241)
+	at org.apache.jena.riot.adapters.RDFReaderRIOT.read(RDFReaderRIOT.java:70)
+	at com.hp.hpl.jena.rdf.model.impl.ModelCom.read(ModelCom.java:286)
+	at eu.larkc.csparql.common.utils.CsparqlUtils.serializeRDFFile(CsparqlUtils.java:26)
+	at csparql.ind.App.main(App.java:40)
+ERROR 0 [2021-02-15 11:53:18,047] [main] org.apache.jena.riot  - [line: 6290, col: 84] XML document structures must start and end within the same entity.
+ERROR 27 [2021-02-15 11:53:18,074] [main] org.apache.jena.riot  - [line: 3, col: 1 ] Broken IRI (newline): rdf:RDF xmlns="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#"
+ERROR 31 [2021-02-15 11:53:18,078] [main] org.apache.jena.riot  - [line: 3, col: 1 ] Broken IRI (newline): rdf:RDF xmlns="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#"
+ERROR 36 [2021-02-15 11:53:18,083] [main] org.apache.jena.riot  - [line: 1, col: 1 ] Expected a { character to start a JSON Object but got [LT]
+ERROR 38 [2021-02-15 11:53:18,085] [main] csparql.ind.App  - [line: 1, col: 1 ] Expected a { character to start a JSON Object but got [LT]
+org.apache.jena.riot.RiotException: [line: 1, col: 1 ] Expected a { character to start a JSON Object but got [LT]
+	at org.apache.jena.riot.system.ErrorHandlerFactory$ErrorHandlerStd.fatal(ErrorHandlerFactory.java:136)
+	at org.apache.jena.riot.lang.LangEngine.raiseException(LangEngine.java:163)
+	at org.apache.jena.riot.lang.LangEngine.exceptionDirect(LangEngine.java:156)
+	at org.apache.jena.riot.lang.LangEngine.exception(LangEngine.java:149)
+	at org.apache.jena.riot.lang.LangRDFJSON.tryParseGraph(LangRDFJSON.java:85)
+	at org.apache.jena.riot.lang.LangRDFJSON.runParser(LangRDFJSON.java:55)
+	at org.apache.jena.riot.lang.LangBase.parse(LangBase.java:42)
+	at org.apache.jena.riot.RDFParserRegistry$ReaderRIOTFactoryImpl$1.read(RDFParserRegistry.java:142)
+	at org.apache.jena.riot.RDFDataMgr.process(RDFDataMgr.java:859)
+	at org.apache.jena.riot.RDFDataMgr.read(RDFDataMgr.java:255)
+	at org.apache.jena.riot.RDFDataMgr.read(RDFDataMgr.java:241)
+	at org.apache.jena.riot.adapters.RDFReaderRIOT.read(RDFReaderRIOT.java:70)
+	at com.hp.hpl.jena.rdf.model.impl.ModelCom.read(ModelCom.java:286)
+	at eu.larkc.csparql.common.utils.CsparqlUtils.serializeRDFFile(CsparqlUtils.java:26)
+	at csparql.ind.App.main(App.java:40)
