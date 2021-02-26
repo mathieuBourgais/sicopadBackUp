@@ -2342,6 +2342,7 @@
         <hasTime rdf:resource="http://www.w3.org/2006/time#t-obs-S_Temperature-0"/>
         <sosa:observedProperty rdf:resource="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#Temperature"/>
         <sosa:hasSimpleResult>25.72^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
+        <sosa:hasSimpleResult>37.68^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -2354,6 +2355,7 @@
         <hasTime rdf:resource="http://www.w3.org/2006/time#t-obs-S_Temperature-1"/>
         <sosa:observedProperty rdf:resource="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#Temperature"/>
         <sosa:hasSimpleResult>25.67^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
+        <sosa:hasSimpleResult>37.67^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -2366,6 +2368,7 @@
         <hasTime rdf:resource="http://www.w3.org/2006/time#t-obs-S_Temperature-10"/>
         <sosa:observedProperty rdf:resource="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#Temperature"/>
         <sosa:hasSimpleResult>31.25^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
+        <sosa:hasSimpleResult>37.67^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -2498,6 +2501,7 @@
         <hasTime rdf:resource="http://www.w3.org/2006/time#t-obs-S_Temperature-11"/>
         <sosa:observedProperty rdf:resource="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#Temperature"/>
         <sosa:hasSimpleResult>32.91^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
+        <sosa:hasSimpleResult>37.71^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -2630,6 +2634,7 @@
         <hasTime rdf:resource="http://www.w3.org/2006/time#t-obs-S_Temperature-12"/>
         <sosa:observedProperty rdf:resource="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#Temperature"/>
         <sosa:hasSimpleResult>33.3^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
+        <sosa:hasSimpleResult>37.7^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -2762,6 +2767,7 @@
         <hasTime rdf:resource="http://www.w3.org/2006/time#t-obs-S_Temperature-13"/>
         <sosa:observedProperty rdf:resource="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#Temperature"/>
         <sosa:hasSimpleResult>33.79^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
+        <sosa:hasSimpleResult>37.72^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -2894,6 +2900,7 @@
         <hasTime rdf:resource="http://www.w3.org/2006/time#t-obs-S_Temperature-14"/>
         <sosa:observedProperty rdf:resource="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#Temperature"/>
         <sosa:hasSimpleResult>34.26^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
+        <sosa:hasSimpleResult>37.7^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3026,6 +3033,7 @@
         <hasTime rdf:resource="http://www.w3.org/2006/time#t-obs-S_Temperature-15"/>
         <sosa:observedProperty rdf:resource="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#Temperature"/>
         <sosa:hasSimpleResult>34.67^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
+        <sosa:hasSimpleResult>37.71^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3158,6 +3166,7 @@
         <hasTime rdf:resource="http://www.w3.org/2006/time#t-obs-S_Temperature-16"/>
         <sosa:observedProperty rdf:resource="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#Temperature"/>
         <sosa:hasSimpleResult>34.88^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
+        <sosa:hasSimpleResult>37.68^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3290,6 +3299,7 @@
         <hasTime rdf:resource="http://www.w3.org/2006/time#t-obs-S_Temperature-17"/>
         <sosa:observedProperty rdf:resource="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#Temperature"/>
         <sosa:hasSimpleResult>35.01^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
+        <sosa:hasSimpleResult>37.7^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3338,6 +3348,7 @@
         <hasTime rdf:resource="http://www.w3.org/2006/time#t-obs-S_Temperature-18"/>
         <sosa:observedProperty rdf:resource="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#Temperature"/>
         <sosa:hasSimpleResult>35.16^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
+        <sosa:hasSimpleResult>37.68^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3350,6 +3361,7 @@
         <hasTime rdf:resource="http://www.w3.org/2006/time#t-obs-S_Temperature-19"/>
         <sosa:observedProperty rdf:resource="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#Temperature"/>
         <sosa:hasSimpleResult>35.29^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
+        <sosa:hasSimpleResult>37.67^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3362,6 +3374,7 @@
         <hasTime rdf:resource="http://www.w3.org/2006/time#t-obs-S_Temperature-2"/>
         <sosa:observedProperty rdf:resource="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#Temperature"/>
         <sosa:hasSimpleResult>25.55^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
+        <sosa:hasSimpleResult>37.69^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3374,6 +3387,7 @@
         <hasTime rdf:resource="http://www.w3.org/2006/time#t-obs-S_Temperature-20"/>
         <sosa:observedProperty rdf:resource="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#Temperature"/>
         <sosa:hasSimpleResult>35.45^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
+        <sosa:hasSimpleResult>37.68^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3386,6 +3400,7 @@
         <hasTime rdf:resource="http://www.w3.org/2006/time#t-obs-S_Temperature-21"/>
         <sosa:observedProperty rdf:resource="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#Temperature"/>
         <sosa:hasSimpleResult>35.5^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
+        <sosa:hasSimpleResult>37.68^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3398,6 +3413,7 @@
         <hasTime rdf:resource="http://www.w3.org/2006/time#t-obs-S_Temperature-22"/>
         <sosa:observedProperty rdf:resource="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#Temperature"/>
         <sosa:hasSimpleResult>35.61^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
+        <sosa:hasSimpleResult>37.72^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3410,6 +3426,7 @@
         <hasTime rdf:resource="http://www.w3.org/2006/time#t-obs-S_Temperature-23"/>
         <sosa:observedProperty rdf:resource="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#Temperature"/>
         <sosa:hasSimpleResult>35.74^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
+        <sosa:hasSimpleResult>37.73^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3422,6 +3439,7 @@
         <hasTime rdf:resource="http://www.w3.org/2006/time#t-obs-S_Temperature-24"/>
         <sosa:observedProperty rdf:resource="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#Temperature"/>
         <sosa:hasSimpleResult>35.76^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
+        <sosa:hasSimpleResult>37.71^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3434,6 +3452,7 @@
         <hasTime rdf:resource="http://www.w3.org/2006/time#t-obs-S_Temperature-25"/>
         <sosa:observedProperty rdf:resource="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#Temperature"/>
         <sosa:hasSimpleResult>35.88^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
+        <sosa:hasSimpleResult>37.73^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3446,6 +3465,7 @@
         <hasTime rdf:resource="http://www.w3.org/2006/time#t-obs-S_Temperature-26"/>
         <sosa:observedProperty rdf:resource="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#Temperature"/>
         <sosa:hasSimpleResult>35.9^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
+        <sosa:hasSimpleResult>37.73^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3458,6 +3478,7 @@
         <hasTime rdf:resource="http://www.w3.org/2006/time#t-obs-S_Temperature-27"/>
         <sosa:observedProperty rdf:resource="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#Temperature"/>
         <sosa:hasSimpleResult>35.97^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
+        <sosa:hasSimpleResult>37.71^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3470,6 +3491,7 @@
         <hasTime rdf:resource="http://www.w3.org/2006/time#t-obs-S_Temperature-28"/>
         <sosa:observedProperty rdf:resource="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#Temperature"/>
         <sosa:hasSimpleResult>36.02^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
+        <sosa:hasSimpleResult>37.73^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3482,6 +3504,7 @@
         <hasTime rdf:resource="http://www.w3.org/2006/time#t-obs-S_Temperature-29"/>
         <sosa:observedProperty rdf:resource="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#Temperature"/>
         <sosa:hasSimpleResult>36.1^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
+        <sosa:hasSimpleResult>37.72^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3494,6 +3517,7 @@
         <hasTime rdf:resource="http://www.w3.org/2006/time#t-obs-S_Temperature-3"/>
         <sosa:observedProperty rdf:resource="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#Temperature"/>
         <sosa:hasSimpleResult>25.57^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
+        <sosa:hasSimpleResult>37.67^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3506,6 +3530,7 @@
         <hasTime rdf:resource="http://www.w3.org/2006/time#t-obs-S_Temperature-30"/>
         <sosa:observedProperty rdf:resource="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#Temperature"/>
         <sosa:hasSimpleResult>36.09^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
+        <sosa:hasSimpleResult>37.67^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3518,6 +3543,7 @@
         <hasTime rdf:resource="http://www.w3.org/2006/time#t-obs-S_Temperature-31"/>
         <sosa:observedProperty rdf:resource="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#Temperature"/>
         <sosa:hasSimpleResult>36.13^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
+        <sosa:hasSimpleResult>37.72^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3530,6 +3556,7 @@
         <hasTime rdf:resource="http://www.w3.org/2006/time#t-obs-S_Temperature-32"/>
         <sosa:observedProperty rdf:resource="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#Temperature"/>
         <sosa:hasSimpleResult>36.14^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
+        <sosa:hasSimpleResult>37.7^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3542,6 +3569,7 @@
         <hasTime rdf:resource="http://www.w3.org/2006/time#t-obs-S_Temperature-33"/>
         <sosa:observedProperty rdf:resource="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#Temperature"/>
         <sosa:hasSimpleResult>36.21^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
+        <sosa:hasSimpleResult>37.71^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3554,6 +3582,7 @@
         <hasTime rdf:resource="http://www.w3.org/2006/time#t-obs-S_Temperature-34"/>
         <sosa:observedProperty rdf:resource="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#Temperature"/>
         <sosa:hasSimpleResult>36.18^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
+        <sosa:hasSimpleResult>37.73^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3566,6 +3595,7 @@
         <hasTime rdf:resource="http://www.w3.org/2006/time#t-obs-S_Temperature-35"/>
         <sosa:observedProperty rdf:resource="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#Temperature"/>
         <sosa:hasSimpleResult>36.28^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
+        <sosa:hasSimpleResult>37.7^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3578,6 +3608,7 @@
         <hasTime rdf:resource="http://www.w3.org/2006/time#t-obs-S_Temperature-36"/>
         <sosa:observedProperty rdf:resource="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#Temperature"/>
         <sosa:hasSimpleResult>36.29^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
+        <sosa:hasSimpleResult>37.68^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3590,6 +3621,7 @@
         <hasTime rdf:resource="http://www.w3.org/2006/time#t-obs-S_Temperature-37"/>
         <sosa:observedProperty rdf:resource="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#Temperature"/>
         <sosa:hasSimpleResult>36.35^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
+        <sosa:hasSimpleResult>37.7^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3602,6 +3634,7 @@
         <hasTime rdf:resource="http://www.w3.org/2006/time#t-obs-S_Temperature-38"/>
         <sosa:observedProperty rdf:resource="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#Temperature"/>
         <sosa:hasSimpleResult>36.33^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
+        <sosa:hasSimpleResult>37.71^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3614,6 +3647,7 @@
         <hasTime rdf:resource="http://www.w3.org/2006/time#t-obs-S_Temperature-39"/>
         <sosa:observedProperty rdf:resource="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#Temperature"/>
         <sosa:hasSimpleResult>36.35^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
+        <sosa:hasSimpleResult>37.74^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3626,6 +3660,7 @@
         <hasTime rdf:resource="http://www.w3.org/2006/time#t-obs-S_Temperature-4"/>
         <sosa:observedProperty rdf:resource="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#Temperature"/>
         <sosa:hasSimpleResult>26.35^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
+        <sosa:hasSimpleResult>37.68^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3638,6 +3673,7 @@
         <hasTime rdf:resource="http://www.w3.org/2006/time#t-obs-S_Temperature-40"/>
         <sosa:observedProperty rdf:resource="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#Temperature"/>
         <sosa:hasSimpleResult>36.35^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
+        <sosa:hasSimpleResult>37.68^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3650,6 +3686,7 @@
         <hasTime rdf:resource="http://www.w3.org/2006/time#t-obs-S_Temperature-41"/>
         <sosa:observedProperty rdf:resource="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#Temperature"/>
         <sosa:hasSimpleResult>36.4^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
+        <sosa:hasSimpleResult>37.72^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3662,6 +3699,7 @@
         <hasTime rdf:resource="http://www.w3.org/2006/time#t-obs-S_Temperature-42"/>
         <sosa:observedProperty rdf:resource="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#Temperature"/>
         <sosa:hasSimpleResult>36.44^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
+        <sosa:hasSimpleResult>37.72^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3758,6 +3796,7 @@
         <hasTime rdf:resource="http://www.w3.org/2006/time#t-obs-S_Temperature-5"/>
         <sosa:observedProperty rdf:resource="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#Temperature"/>
         <sosa:hasSimpleResult>26.52^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
+        <sosa:hasSimpleResult>37.65^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3890,6 +3929,7 @@
         <hasTime rdf:resource="http://www.w3.org/2006/time#t-obs-S_Temperature-6"/>
         <sosa:observedProperty rdf:resource="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#Temperature"/>
         <sosa:hasSimpleResult>26.64^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
+        <sosa:hasSimpleResult>37.67^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -4022,6 +4062,7 @@
         <hasTime rdf:resource="http://www.w3.org/2006/time#t-obs-S_Temperature-7"/>
         <sosa:observedProperty rdf:resource="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#Temperature"/>
         <sosa:hasSimpleResult>26.99^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
+        <sosa:hasSimpleResult>37.7^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -4154,6 +4195,7 @@
         <hasTime rdf:resource="http://www.w3.org/2006/time#t-obs-S_Temperature-8"/>
         <sosa:observedProperty rdf:resource="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#Temperature"/>
         <sosa:hasSimpleResult>26.84^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
+        <sosa:hasSimpleResult>37.67^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -4286,6 +4328,7 @@
         <hasTime rdf:resource="http://www.w3.org/2006/time#t-obs-S_Temperature-9"/>
         <sosa:observedProperty rdf:resource="http://semanticweb.org/STEaMINg/ContextOntology-COInd4#Temperature"/>
         <sosa:hasSimpleResult>27.37^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
+        <sosa:hasSimpleResult>37.67^^http://www.w3.org/2001/XMLSchema#double</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -4443,6 +4486,7 @@
         <time:inXSDDateTimeStamp>2021-02-15 15:56:27.176^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 16:44:31.806^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 16:45:58.211^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
+        <time:inXSDDateTimeStamp>Sat May 23 04:41:33 CEST 2020^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
     </owl:NamedIndividual>
     
 
@@ -4462,6 +4506,7 @@
         <time:inXSDDateTimeStamp>2021-02-15 15:56:29.796^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 16:44:34.414^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 16:46:01.085^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
+        <time:inXSDDateTimeStamp>Sat May 23 04:42:02 CEST 2020^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
     </owl:NamedIndividual>
     
 
@@ -4479,6 +4524,7 @@
         <time:inXSDDateTimeStamp>2021-02-15 14:10:52.059^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 15:56:51.3^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 16:46:22.627^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
+        <time:inXSDDateTimeStamp>Sat May 23 04:46:24 CEST 2020^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
     </owl:NamedIndividual>
     
 
@@ -4595,6 +4641,7 @@
         <time:inXSDDateTimeStamp>2021-02-15 14:03:28.284^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:10:54.614^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 16:46:25.005^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
+        <time:inXSDDateTimeStamp>Sat May 23 04:46:53 CEST 2020^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
     </owl:NamedIndividual>
     
 
@@ -4711,6 +4758,7 @@
         <time:inXSDDateTimeStamp>2021-02-15 14:03:30.93^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:10:57.144^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 16:46:27.165^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
+        <time:inXSDDateTimeStamp>Sat May 23 04:47:22 CEST 2020^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
     </owl:NamedIndividual>
     
 
@@ -4827,6 +4875,7 @@
         <time:inXSDDateTimeStamp>2021-02-15 14:03:33.555^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:10:59.753^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 16:46:29.574^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
+        <time:inXSDDateTimeStamp>Sat May 23 04:47:51 CEST 2020^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
     </owl:NamedIndividual>
     
 
@@ -4943,6 +4992,7 @@
         <time:inXSDDateTimeStamp>2021-02-15 14:03:36.16^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:11:02.442^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 16:46:31.891^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
+        <time:inXSDDateTimeStamp>Sat May 23 04:48:20 CEST 2020^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
     </owl:NamedIndividual>
     
 
@@ -5059,6 +5109,7 @@
         <time:inXSDDateTimeStamp>2021-02-15 14:03:38.737^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:11:05.023^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 16:46:34.129^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
+        <time:inXSDDateTimeStamp>Sat May 23 04:48:49 CEST 2020^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
     </owl:NamedIndividual>
     
 
@@ -5175,6 +5226,7 @@
         <time:inXSDDateTimeStamp>2021-02-15 14:03:41.244^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:11:07.583^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 16:46:36.478^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
+        <time:inXSDDateTimeStamp>Sat May 23 04:49:18 CEST 2020^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
     </owl:NamedIndividual>
     
 
@@ -5291,6 +5343,7 @@
         <time:inXSDDateTimeStamp>2021-02-15 14:03:43.796^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:11:10.194^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 16:46:38.659^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
+        <time:inXSDDateTimeStamp>Sat May 23 04:49:48 CEST 2020^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
     </owl:NamedIndividual>
     
 
@@ -5337,6 +5390,7 @@
         <time:inXSDDateTimeStamp>2021-02-15 14:03:46.304^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:11:12.756^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 16:46:40.982^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
+        <time:inXSDDateTimeStamp>Sat May 23 04:50:17 CEST 2020^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
     </owl:NamedIndividual>
     
 
@@ -5352,6 +5406,7 @@
         <time:inXSDDateTimeStamp>2021-02-15 14:03:48.929^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:11:15.359^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 16:46:43.407^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
+        <time:inXSDDateTimeStamp>Sat May 23 04:50:46 CEST 2020^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
     </owl:NamedIndividual>
     
 
@@ -5371,6 +5426,7 @@
         <time:inXSDDateTimeStamp>2021-02-15 15:56:32.241^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 16:44:36.858^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 16:46:03.524^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
+        <time:inXSDDateTimeStamp>Sat May 23 04:42:31 CEST 2020^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
     </owl:NamedIndividual>
     
 
@@ -5385,6 +5441,7 @@
         <time:inXSDDateTimeStamp>2021-02-15 13:54:28.96^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:03:51.476^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:11:17.97^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
+        <time:inXSDDateTimeStamp>Sat May 23 04:51:15 CEST 2020^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
     </owl:NamedIndividual>
     
 
@@ -5399,6 +5456,7 @@
         <time:inXSDDateTimeStamp>2021-02-15 13:54:31.191^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:03:54.09^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:11:20.618^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
+        <time:inXSDDateTimeStamp>Sat May 23 04:51:44 CEST 2020^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
     </owl:NamedIndividual>
     
 
@@ -5413,6 +5471,7 @@
         <time:inXSDDateTimeStamp>2021-02-15 13:54:33.455^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:03:56.595^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:11:23.19^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
+        <time:inXSDDateTimeStamp>Sat May 23 04:52:13 CEST 2020^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
     </owl:NamedIndividual>
     
 
@@ -5427,6 +5486,7 @@
         <time:inXSDDateTimeStamp>2021-02-15 13:54:35.75^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:03:59.206^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:11:25.725^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
+        <time:inXSDDateTimeStamp>Sat May 23 04:52:42 CEST 2020^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
     </owl:NamedIndividual>
     
 
@@ -5440,6 +5500,7 @@
         <time:inXSDDateTimeStamp>2021-02-15 13:54:38.0^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:04:01.464^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:11:28.217^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
+        <time:inXSDDateTimeStamp>Sat May 23 04:53:11 CEST 2020^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
     </owl:NamedIndividual>
     
 
@@ -5453,6 +5514,7 @@
         <time:inXSDDateTimeStamp>2021-02-15 13:54:40.341^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:04:04.028^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:11:30.821^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
+        <time:inXSDDateTimeStamp>Sat May 23 04:53:41 CEST 2020^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
     </owl:NamedIndividual>
     
 
@@ -5466,6 +5528,7 @@
         <time:inXSDDateTimeStamp>2021-02-15 13:54:42.617^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:04:06.533^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:11:33.357^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
+        <time:inXSDDateTimeStamp>Sat May 23 04:54:10 CEST 2020^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
     </owl:NamedIndividual>
     
 
@@ -5479,6 +5542,7 @@
         <time:inXSDDateTimeStamp>2021-02-15 13:54:44.924^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:04:08.639^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:11:35.963^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
+        <time:inXSDDateTimeStamp>Sat May 23 04:54:39 CEST 2020^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
     </owl:NamedIndividual>
     
 
@@ -5492,6 +5556,7 @@
         <time:inXSDDateTimeStamp>2021-02-15 13:54:47.278^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:04:11.156^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:11:38.509^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
+        <time:inXSDDateTimeStamp>Sat May 23 04:55:08 CEST 2020^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
     </owl:NamedIndividual>
     
 
@@ -5505,6 +5570,7 @@
         <time:inXSDDateTimeStamp>2021-02-15 13:54:49.462^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:04:13.692^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:11:41.037^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
+        <time:inXSDDateTimeStamp>Sat May 23 04:55:37 CEST 2020^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
     </owl:NamedIndividual>
     
 
@@ -5524,6 +5590,7 @@
         <time:inXSDDateTimeStamp>2021-02-15 15:56:34.607^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 16:44:39.263^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 16:46:05.882^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
+        <time:inXSDDateTimeStamp>Sat May 23 04:43:00 CEST 2020^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
     </owl:NamedIndividual>
     
 
@@ -5537,6 +5604,7 @@
         <time:inXSDDateTimeStamp>2021-02-15 13:54:51.664^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:04:15.899^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:11:43.583^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
+        <time:inXSDDateTimeStamp>Sat May 23 04:56:06 CEST 2020^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
     </owl:NamedIndividual>
     
 
@@ -5550,6 +5618,7 @@
         <time:inXSDDateTimeStamp>2021-02-15 13:54:54.032^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:04:18.372^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:11:46.149^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
+        <time:inXSDDateTimeStamp>Sat May 23 04:56:35 CEST 2020^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
     </owl:NamedIndividual>
     
 
@@ -5563,6 +5632,7 @@
         <time:inXSDDateTimeStamp>2021-02-15 13:54:56.281^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:04:20.851^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:11:48.694^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
+        <time:inXSDDateTimeStamp>Sat May 23 04:57:04 CEST 2020^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
     </owl:NamedIndividual>
     
 
@@ -5576,6 +5646,7 @@
         <time:inXSDDateTimeStamp>2021-02-15 13:54:58.533^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:04:23.421^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:11:51.277^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
+        <time:inXSDDateTimeStamp>Sat May 23 04:57:34 CEST 2020^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
     </owl:NamedIndividual>
     
 
@@ -5589,6 +5660,7 @@
         <time:inXSDDateTimeStamp>2021-02-15 13:55:00.786^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:04:25.964^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:11:53.594^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
+        <time:inXSDDateTimeStamp>Sat May 23 04:58:03 CEST 2020^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
     </owl:NamedIndividual>
     
 
@@ -5602,6 +5674,7 @@
         <time:inXSDDateTimeStamp>2021-02-15 13:55:02.953^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:04:28.472^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:11:56.125^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
+        <time:inXSDDateTimeStamp>Sat May 23 04:58:32 CEST 2020^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
     </owl:NamedIndividual>
     
 
@@ -5615,6 +5688,7 @@
         <time:inXSDDateTimeStamp>2021-02-15 13:55:05.28^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:04:31.009^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:11:58.692^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
+        <time:inXSDDateTimeStamp>Sat May 23 04:59:01 CEST 2020^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
     </owl:NamedIndividual>
     
 
@@ -5628,6 +5702,7 @@
         <time:inXSDDateTimeStamp>2021-02-15 13:55:07.532^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:04:33.522^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:12:01.284^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
+        <time:inXSDDateTimeStamp>Sat May 23 04:59:30 CEST 2020^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
     </owl:NamedIndividual>
     
 
@@ -5641,6 +5716,7 @@
         <time:inXSDDateTimeStamp>2021-02-15 13:55:09.785^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:04:35.96^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:12:03.918^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
+        <time:inXSDDateTimeStamp>Sat May 23 04:59:59 CEST 2020^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
     </owl:NamedIndividual>
     
 
@@ -5653,6 +5729,7 @@
         <time:inXSDDateTimeStamp>2021-02-15 13:55:12.101^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:04:38.404^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:12:06.372^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
+        <time:inXSDDateTimeStamp>Sat May 23 05:00:28 CEST 2020^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
     </owl:NamedIndividual>
     
 
@@ -5672,6 +5749,7 @@
         <time:inXSDDateTimeStamp>2021-02-15 15:56:36.928^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 16:44:41.615^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 16:46:08.327^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
+        <time:inXSDDateTimeStamp>Sat May 23 04:43:29 CEST 2020^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
     </owl:NamedIndividual>
     
 
@@ -5684,6 +5762,7 @@
         <time:inXSDDateTimeStamp>2021-02-15 13:55:14.369^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:04:40.966^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:12:09.005^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
+        <time:inXSDDateTimeStamp>Sat May 23 05:00:57 CEST 2020^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
     </owl:NamedIndividual>
     
 
@@ -5696,6 +5775,7 @@
         <time:inXSDDateTimeStamp>2021-02-15 13:55:16.651^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:04:43.569^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:12:11.526^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
+        <time:inXSDDateTimeStamp>Sat May 23 05:01:26 CEST 2020^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
     </owl:NamedIndividual>
     
 
@@ -5708,6 +5788,7 @@
         <time:inXSDDateTimeStamp>2021-02-15 13:55:18.925^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:04:46.104^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 14:12:14.067^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
+        <time:inXSDDateTimeStamp>Sat May 23 05:01:56 CEST 2020^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
     </owl:NamedIndividual>
     
 
@@ -5811,6 +5892,7 @@
         <time:inXSDDateTimeStamp>2021-02-15 15:56:39.337^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 16:44:43.988^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 16:46:10.743^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
+        <time:inXSDDateTimeStamp>Sat May 23 04:43:58 CEST 2020^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
     </owl:NamedIndividual>
     
 
@@ -5950,6 +6032,7 @@
         <time:inXSDDateTimeStamp>2021-02-15 15:56:41.75^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 16:44:46.585^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 16:46:13.172^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
+        <time:inXSDDateTimeStamp>Sat May 23 04:44:27 CEST 2020^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
     </owl:NamedIndividual>
     
 
@@ -6089,6 +6172,7 @@
         <time:inXSDDateTimeStamp>2021-02-15 15:56:44.164^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 16:44:48.993^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 16:46:15.493^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
+        <time:inXSDDateTimeStamp>Sat May 23 04:44:56 CEST 2020^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
     </owl:NamedIndividual>
     
 
@@ -6222,6 +6306,7 @@
         <time:inXSDDateTimeStamp>2021-02-15 15:56:46.596^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 16:44:51.368^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 16:46:17.839^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
+        <time:inXSDDateTimeStamp>Sat May 23 04:45:25 CEST 2020^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
     </owl:NamedIndividual>
     
 
@@ -6351,6 +6436,7 @@
         <time:inXSDDateTimeStamp>2021-02-15 15:56:48.92^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 16:44:53.726^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
         <time:inXSDDateTimeStamp>2021-02-15 16:46:20.348^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
+        <time:inXSDDateTimeStamp>Sat May 23 04:45:55 CEST 2020^^http://www.w3.org/2001/XMLSchema#dateTimeStamp</time:inXSDDateTimeStamp>
     </owl:NamedIndividual>
     
 
