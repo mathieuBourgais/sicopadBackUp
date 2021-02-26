@@ -101,7 +101,7 @@ public class App {
 				//+ "PREFIX : <http://semanticweb.org/mathieu/ontologies/2020/11/sicopad#> "
 				+ "PREFIX : <http://semanticweb.org/STEaMINg/ContextOntology-COInd4#> "
 				+ "PREFIX sosa: <http://www.w3.org/ns/sosa/> "
-				+ "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> "
+				//+ "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> "
 				+ "SELECT ?s (AVG(?v1) as ?avgTemp) "
 				+ "FROM STREAM <Stream_S_temp> [RANGE 10s TUMBLING] "
 				+ "FROM <http://streamreasoning.org/sicopad> "
@@ -146,7 +146,7 @@ public class App {
 			//Start streaming data
 			Stream_temp_Thread.start();
 
-		}catch (Exception e) {
+		} catch (Exception e) {
 			logger.error(e.getMessage(), e);
 		}
 	}

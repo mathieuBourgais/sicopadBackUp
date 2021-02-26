@@ -2,6 +2,8 @@ package csparql.ind.streamer;
 
 import java.io.FileReader;
 import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -53,7 +55,6 @@ public class SensorsStreamer extends RdfStream implements Runnable {
 	}
 
 	public void run() {
-
 		try {
 			SimpleDateFormat date_formatter = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");  
 			CSVReader reader = new CSVReader(new FileReader("example.csv"));
@@ -62,8 +63,10 @@ public class SensorsStreamer extends RdfStream implements Runnable {
 			int observationIndex = 0;
 			int timeIndex = 0;
 			List<Date> data_x = new ArrayList<>();
+			List<String> data_xStr = new ArrayList<>();
 			List<Double> data_y = new ArrayList<>();
 			int i = 1;
+
 			for (String[] row : allRows) {
 				if (i > start) {
 					if (!row[3].isEmpty()) {
@@ -73,6 +76,7 @@ public class SensorsStreamer extends RdfStream implements Runnable {
 					}
 					String date_str = row[1].replace("/", "-") + " " + row[2];
 					Date date = date_formatter.parse(date_str); 
+					data_xStr.add(date_str);
 					data_x.add(date);
 					data_y.add(value);
 					//System.out.println("Reading Values from file");
@@ -101,7 +105,9 @@ public class SensorsStreamer extends RdfStream implements Runnable {
 				try{
 					value =  data_y.get(observationIndex); //axis_y_values.get(observationIndex);   
 					Date date = data_x.get(timeIndex); //axis_x_values.get(timeIndex);
-					
+					LocalDateTime datetime = LocalDateTime.parse(data_xStr.get(timeIndex), DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss"));
+					String d = datetime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.S"));
+
 					axis_y_values.add(value);
 					axis_x_values.add(date);
 					chart.updateXYSeries(prop, axis_x_values, axis_y_values, null);
@@ -119,7 +125,8 @@ public class SensorsStreamer extends RdfStream implements Runnable {
 					q = new RdfQuadruple(baseUri + "S_" + prop + "-Obs-" + observationIndex, baseUri + "hasTime", baseUri + "t-obs-S_" + prop + "-"+ timeIndex, System.currentTimeMillis());
 					//System.out.println(q);
 					this.put(q);
-					q = new RdfQuadruple(baseUri + "t-obs-S_" + prop + "-"+ timeIndex, baseUri + "inXSDDateTime", date + "^^http://www.w3.org/2001/XMLSchema#dateTime", System.currentTimeMillis());
+					//q = new RdfQuadruple(baseUri + "t-obs-S_" + prop + "-"+ timeIndex, baseUri + "inXSDDateTime", date + "^^http://www.w3.org/2001/XMLSchema#dateTime", System.currentTimeMillis());
+					q = new RdfQuadruple(baseUri + "t-obs-S_" + prop + "-"+ timeIndex, baseUri + "inXSDDateTime", d + "^^http://www.w3.org/2001/XMLSchema#dateTime", System.currentTimeMillis());
 					System.out.println(q);
 					this.put(q);
 				
