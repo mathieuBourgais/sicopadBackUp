@@ -2,13 +2,19 @@ package csparql.ind;
 
 import java.awt.Color;
 import java.io.File;
-
-import org.apache.http.message.BasicStatusLine;
+import java.io.FileReader;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import com.opencsv.CSVReader;
 import org.apache.log4j.PropertyConfigurator;
-import org.knowm.xchart.QuickChart;
 import org.knowm.xchart.SwingWrapper;
 import org.knowm.xchart.XYChart;
+import org.knowm.xchart.XYChartBuilder;
+import org.knowm.xchart.style.Styler.ChartTheme;
 import org.knowm.xchart.style.Styler.LegendPosition;
+import org.knowm.xchart.style.markers.SeriesMarkers;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.OWLOntology;
@@ -37,97 +43,111 @@ public class App {
 			//The initialization creates the static engine (SPARQL) and the stream engine (CEP)
 			engine.initialize(true);
 
+			//String fileOntology = "sicopad.owl";
 			String fileOntology = "ContextOntology-COInd4.owl";
 
 			// put static model
-			engine.putStaticNamedModel("http://streamreasoning.org/ContextOntology-COInd4",CsparqlUtils.serializeRDFFile(fileOntology));
+			engine.putStaticNamedModel("http://streamreasoning.org/sicopad",CsparqlUtils.serializeRDFFile(fileOntology));
 			
-			/*
-			String queryS6 = "REGISTER QUERY S6detection AS "
-				+ "PREFIX : <http://semanticweb.org/STEaMINg/ContextOntology-COInd4#> "
-				+ "PREFIX sosa: <http://www.w3.org/ns/sosa/> "
-				+ "SELECT ?m ?pl "
-				+ "FROM STREAM <Stream_S_temp> [RANGE 60s STEP 60s] "
-				+ "FROM <http://streamreasoning.org/ContextOntology-COInd4> "
-				+ "WHERE { "
-				+ "{ ?m         		:isPartOf        ?pl ."
-				+ "  ?m         		sosa:hosts       sosa:S_Temperature ." 
-				+	"  :S_Temperature :madeObservation ?o1 ."
-				+ "  ?o1        		:hasSimpleResult ?v1 ."
-				+ " FILTER ( "
-				+ "		?v1 > 30.0 "
-				+ " ) . }"
-				+ " } ";
-			*/
+			List<Date> axis_x_date = new ArrayList<>();
+			List<Double> axis_y_temp = new ArrayList<>();
+			int start = 4200;
+			CSVReader reader = new CSVReader(new FileReader("example.csv"));
+			List<String[]> allRows = reader.readAll();
 			
-			String queryS6 = "REGISTER QUERY S6detection AS "
-				+ "PREFIX : <http://semanticweb.org/STEaMINg/ContextOntology-COInd4#> "
-				+ "PREFIX sosa: <http://www.w3.org/ns/sosa/> "
-				+ "SELECT ?s (AVG(?v1) as ?avgTemp) "
-				+ "FROM STREAM <Stream_S_temp> [RANGE 10s STEP 10s] "
-				+ "FROM <http://streamreasoning.org/ContextOntology-COInd4> "
-				+ "WHERE { "
-				+	"  ?s  :madeObservation ?o1 ."
-				+ "  ?o1 :hasSimpleResult ?v1 ."
-				+ " } "
-				+ " GROUP BY ?s "
-				+ " HAVING(AVG(?v1) > 30.0) ";
+			Double value =  Double.parseDouble(allRows.get(start)[3]);
+			String date_str = allRows.get(start)[1].replace("/", "-") + " " + allRows.get(start)[2];
+			SimpleDateFormat date_formatter = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");  
+			Date date = date_formatter.parse(date_str); 
+			axis_x_date.add(date);
+			axis_y_temp.add(value);
 
-			double[] data_temp = new double[9000];
-			
-			double phase = 0;
-			
-			double[][] initdata_temp = getInitData(phase,data_temp);
-
-			final XYChart chart = QuickChart.getChart("Capsule n°2,21.00.06.F9", "Time", "(°C)", "Temperature", initdata_temp[0], initdata_temp[1]);
+			final XYChart chart = new XYChartBuilder().width(800).height(600).theme(ChartTheme.XChart).title("Capsule n°2,21.00.06.F9").build();
 			chart.getStyler().setLegendPosition(LegendPosition.OutsideS);
-			//XYSeries series_TG_temp = chart.addSeries("TG_temp", initdata_TG_temp[0],initdata_TG_temp[1]);
-			//series_TG_temp.setMarker(SeriesMarkers.NONE);
+			chart.setXAxisTitle("Time");
+			chart.setYAxisTitle("°C");
+			chart.addSeries("Temperature", axis_x_date, axis_y_temp).setMarker(SeriesMarkers.NONE);
 			chart.getStyler().setYAxisMin(25.0);
 			chart.getStyler().setYAxisMax(40.0);
+			chart.getStyler().setXAxisLabelRotation(-90);
 			chart.getStyler().setCursorEnabled(true);
 			chart.getStyler().setCursorColor(Color.GREEN);
-			chart.getStyler().setCursorFontColor(Color.ORANGE);
-			chart.getStyler().setCursorBackgroundColor(Color.BLUE);
+			chart.getStyler().setCursorFontColor(Color.BLACK);
+			chart.getStyler().setCursorBackgroundColor(Color.WHITE);			
+			chart.getStyler().setZoomEnabled(true);
+			chart.getStyler().setZoomResetByDoubleClick(false);
+			chart.getStyler().setZoomResetByButton(true);
+			chart.getStyler().setZoomSelectionColor(new Color(0,0 , 192, 128));
 			final SwingWrapper<XYChart> sw = new SwingWrapper<XYChart>(chart);
 			sw.displayChart();
 
+			String queryPrefievre = "REGISTER QUERY Prefievre AS "
+				//+ "PREFIX : <http://semanticweb.org/mathieu/ontologies/2020/11/sicopad#> "
+				+ "PREFIX : <http://semanticweb.org/STEaMINg/ContextOntology-COInd4#> "
+				+ "PREFIX sosa: <http://www.w3.org/ns/sosa/> "
+				+ "SELECT ?s (AVG(?v1) as ?avgTemp) "
+				+ "FROM STREAM <Stream_S_temp> [RANGE 10s TUMBLING] "
+				+ "FROM <http://streamreasoning.org/sicopad> "
+				+ "WHERE { "
+				+	"  ?s  :madeObservation ?o1 ."
+				+ "  ?o1 :hasTime         ?t  ."
+				+ "  ?t  :inXSDDateTime   ?ts  ."
+				+ "  ?o1 :hasSimpleResult ?v1 ."
+				+ " } "
+				+ " GROUP BY ?s "
+				+ " HAVING((AVG(?v1) > 37.8) && (AVG(?v1) < 38.0)) ";
+
+			String queryPrefievreNuit = "REGISTER QUERY PrefievreNuit AS "
+				//+ "PREFIX : <http://semanticweb.org/mathieu/ontologies/2020/11/sicopad#> "
+				+ "PREFIX : <http://semanticweb.org/STEaMINg/ContextOntology-COInd4#> "
+				+ "PREFIX sosa: <http://www.w3.org/ns/sosa/> "
+				+ "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> "
+				+ "SELECT ?s (AVG(?v1) as ?avgTemp) "
+				+ "FROM STREAM <Stream_S_temp> [RANGE 10s TUMBLING] "
+				+ "FROM <http://streamreasoning.org/sicopad> "
+				+ "WHERE { "
+				+	"  ?s  :madeObservation ?o1 ."
+				+ "  ?o1 :hasTime         ?t  ."
+				+ "  ?t  :inXSDDateTime   ?ts  ."
+				+ "  ?o1 :hasSimpleResult ?v1 ."
+				+ " FILTER ( "
+				//+ "       (hours(\"2011-01-10T14:45:13.815-05:00\"^^xsd:dateTime)	= 14 ) " 
+				+ "         (hours(?ts)	> 0 ) "
+				+ "         && (hours(?ts) < 7 ) " 
+				+ " ) "
+				+ " } "
+				+ " GROUP BY ?s "
+				+ " HAVING((AVG(?v1) > 37.6) && (AVG(?v1) < 37.8) "
+				+ " ) ";
+				
+
 			OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
 			OWLDataFactory factory = manager.getOWLDataFactory();
+			//String ontologyURI = "http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad";
 			String ontologyURI = "http://semanticweb.org/STEaMINg/ContextOntology-COInd4";
 			String ns = ontologyURI + "#";
 			final OWLOntology ontology = manager.loadOntologyFromOntologyDocument(new File(fileOntology));
 			
-			SensorsStreamer Stream_Temp = new SensorsStreamer("Stream_S_temp",ns,"Temperature",2,ontology,factory,data_temp,chart,sw);
+			SensorsStreamer Stream_Temp = new SensorsStreamer("Stream_S_temp",ns,"Temperature",1,ontology,factory,axis_x_date,axis_y_temp,chart,sw,start);
 
 			//Register new streams in the engine
 			engine.registerStream(Stream_Temp);
 
-			Thread Stream_C_Wtemp_Thread = new Thread(Stream_Temp);
+			Thread Stream_temp_Thread = new Thread(Stream_Temp);
 
 			//Register new query in the engine
-			CsparqlQueryResultProxy c_S6 = engine.registerQuery(queryS6, false);
+			CsparqlQueryResultProxy c_queryPrefievre = engine.registerQuery(queryPrefievre, false);
+			CsparqlQueryResultProxy c_queryPrefievreNuit = engine.registerQuery(queryPrefievreNuit, false);
 			
 			//Attach a result consumer to the query result proxy to print the results on the console
-			c_S6.addObserver(new ConsoleFormatter("S6",ns,ontology,factory));	
+			c_queryPrefievre.addObserver(new ConsoleFormatterPreFievre("PREFIEVRE",ns,ontology,factory,axis_x_date,chart,sw));	
+			c_queryPrefievreNuit.addObserver(new ConsoleFormatterPreFievreNuit("PREFIEVRE-NUIT",ns,ontology,factory,axis_x_date,chart,sw));
 
 			//Start streaming data
-			Stream_C_Wtemp_Thread.start();
+			Stream_temp_Thread.start();
 
 		}catch (Exception e) {
 			logger.error(e.getMessage(), e);
 		}
-
-	}
-	
-	private static double[][] getInitData(double phase, double[] values) {
-		double[] xData = new double[1];
-		double[] yData = new double[1];
-		for (int i = 0; i < xData.length; i++) {
-			xData[i] = phase+i;
-			int index=(int) (phase+i);
-			yData[i] = values[index];
-		}
-		return new double[][] { xData, yData };
 	}
 }

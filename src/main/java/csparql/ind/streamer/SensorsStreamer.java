@@ -1,8 +1,9 @@
 package csparql.ind.streamer;
 
 import java.io.FileReader;
-import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 import com.opencsv.CSVReader;
@@ -29,34 +30,57 @@ public class SensorsStreamer extends RdfStream implements Runnable {
 	private String prop;
 	private OWLOntology ontology;
 	private OWLDataFactory factory;
-	private double[] dataValues;
+	private List<Date> axis_x_values;
+	private List<Double> axis_y_values;
 	private XYChart chart;
 	private SwingWrapper<XYChart> sw;
+	private int start;
 
 	public SensorsStreamer(String iri, String baseUri, String prop, long sleepTime,
-			OWLOntology ontology, OWLDataFactory factory, double[] dataValues, XYChart chart, SwingWrapper<XYChart> sw) {
+			OWLOntology ontology, OWLDataFactory factory, List<Date> axis_x_values, List<Double> axis_y_values, 
+			XYChart chart, SwingWrapper<XYChart> sw, int start) {
 		super(iri);
 		this.sleepTime = sleepTime;
 		this.baseUri = baseUri;
 		this.prop = prop;
 		this.ontology = ontology;
 		this.factory = factory;
-		this.dataValues = dataValues;
+		this.axis_x_values = axis_x_values;
+		this.axis_y_values = axis_y_values;
 		this.chart = chart;
 		this.sw = sw;
+		this.start = start;
 	}
 
 	public void run() {
 
 		try {
+			SimpleDateFormat date_formatter = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");  
 			CSVReader reader = new CSVReader(new FileReader("example.csv"));
 			List<String[]> allRows = reader.readAll();
-
-			//String result;
-			Double result;
+			Double value = 0.0;
 			int observationIndex = 0;
 			int timeIndex = 0;
-
+			List<Date> data_x = new ArrayList<>();
+			List<Double> data_y = new ArrayList<>();
+			int i = 1;
+			for (String[] row : allRows) {
+				if (i > start) {
+					if (!row[3].isEmpty()) {
+						value = Double.parseDouble(row[3]);
+					} else {
+						value = 0.0;
+					}
+					String date_str = row[1].replace("/", "-") + " " + row[2];
+					Date date = date_formatter.parse(date_str); 
+					data_x.add(date);
+					data_y.add(value);
+					//System.out.println("Reading Values from file");
+				}
+				i++;
+			}
+			
+			//String ontologyURI = "http://www.semanticweb.org/mathieu/ontologies/2020/11/sicopad"; 
 			String ontologyURI = "http://semanticweb.org/STEaMINg/ContextOntology-COInd4";
 			String ns = ontologyURI + "#";
 			String pre_SOSAOnt = "http://www.w3.org/ns/sosa/";
@@ -75,27 +99,27 @@ public class SensorsStreamer extends RdfStream implements Runnable {
 
 			while(true){
 				try{
-					result =  Double.parseDouble(allRows.get(observationIndex)[3]);
-					Timestamp date = new Timestamp(System.currentTimeMillis());
-
-					dataValues[observationIndex] = result;
-					final double[][] data = getData(observationIndex,dataValues);
-					chart.updateXYSeries(prop, data[0], data[1], null);
+					value =  data_y.get(observationIndex); //axis_y_values.get(observationIndex);   
+					Date date = data_x.get(timeIndex); //axis_x_values.get(timeIndex);
+					
+					axis_y_values.add(value);
+					axis_x_values.add(date);
+					chart.updateXYSeries(prop, axis_x_values, axis_y_values, null);
 					sw.repaintChart();
 
 					RdfQuadruple q = new RdfQuadruple(baseUri + "S_" + prop, baseUri + "madeObservation", baseUri + "S_" + prop + "-Obs-" + 	observationIndex, System.currentTimeMillis());
-					System.out.println(q);
+					//System.out.println(q);
 					this.put(q);
 					q = new RdfQuadruple(baseUri + "S_" + prop + "-Obs-" + observationIndex, baseUri + "observedProperty", baseUri + prop, System.currentTimeMillis());
-					System.out.println(q);
+					//System.out.println(q);
 					this.put(q);
-					q = new RdfQuadruple(baseUri + "S_" + prop + "-Obs-" + observationIndex, baseUri + "hasSimpleResult", result + "^^http://www.w3.org/2001/XMLSchema#double", System.currentTimeMillis());
+					q = new RdfQuadruple(baseUri + "S_" + prop + "-Obs-" + observationIndex, baseUri + "hasSimpleResult", value + "^^http://www.w3.org/2001/XMLSchema#double", System.currentTimeMillis());
 					System.out.println(q);
 					this.put(q);
 					q = new RdfQuadruple(baseUri + "S_" + prop + "-Obs-" + observationIndex, baseUri + "hasTime", baseUri + "t-obs-S_" + prop + "-"+ timeIndex, System.currentTimeMillis());
-					System.out.println(q);
+					//System.out.println(q);
 					this.put(q);
-					q = new RdfQuadruple(baseUri + "t-obs-S_" + prop + "-"+ timeIndex, baseUri + "inXSDDateTime", date + "^^http://www.w3.org/2001/XMLSchema#dateTimeStamp", System.currentTimeMillis());
+					q = new RdfQuadruple(baseUri + "t-obs-S_" + prop + "-"+ timeIndex, baseUri + "inXSDDateTime", date + "^^http://www.w3.org/2001/XMLSchema#dateTime", System.currentTimeMillis());
 					System.out.println(q);
 					this.put(q);
 				
@@ -122,7 +146,7 @@ public class SensorsStreamer extends RdfStream implements Runnable {
 					OWLDataPropertyAssertionAxiom timehasdate = factory.getOWLDataPropertyAssertionAxiom(inXSDDateTimeStamp, time, date + "^^http://www.w3.org/2001/XMLSchema#dateTimeStamp");
 					ontology.add(timehasdate);
 
-					OWLDataPropertyAssertionAxiom obshassimpleresult = factory.getOWLDataPropertyAssertionAxiom(hasSimpleResult, obs, result + "^^http://www.w3.org/2001/XMLSchema#double");
+					OWLDataPropertyAssertionAxiom obshassimpleresult = factory.getOWLDataPropertyAssertionAxiom(hasSimpleResult, obs, value + "^^http://www.w3.org/2001/XMLSchema#double");
 					ontology.add(obshassimpleresult);
 
 					try {
@@ -130,8 +154,8 @@ public class SensorsStreamer extends RdfStream implements Runnable {
 					} catch (OWLOntologyStorageException e1) {
 						e1.printStackTrace();
 					}
-
-					TimeUnit.SECONDS.sleep(sleepTime);
+				
+					TimeUnit.MILLISECONDS.sleep(sleepTime);
 					observationIndex++;
 					timeIndex++;
 				} catch(Exception e){
@@ -141,22 +165,5 @@ public class SensorsStreamer extends RdfStream implements Runnable {
 		} catch (Exception e) {
 			//TODO: handle exception
 		}
-	}
-
-	private static double[][] getData(double phase,double[] values) {
-		ArrayList<Double> xData1 = new ArrayList<Double>();
-		ArrayList<Double> yData1 = new ArrayList<Double>();
-		for (int i = 0; i < phase; i++) {
-				xData1.add(i+0.0);
-				int index=(int) (i);
-				yData1.add(values[index]);
-		}
-		double[] xData = new double[xData1.size()];
-		double[] yData = new double[yData1.size()];
-		for (int i = 0; i < phase; i++) {
-			xData[i] = xData1.get(i);
-			yData[i] = yData1.get(i);
-	 	}
-		return new double[][] { xData, yData };
 	}
 }
